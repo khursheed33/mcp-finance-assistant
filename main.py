@@ -24,4 +24,4 @@ async def chat(request: ChatRequest):
 if __name__ == "__main__":
     from dotenv import load_dotenv
     load_dotenv(".env")
-    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=False)
